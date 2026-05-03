@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A refined portfolio website blending modern minimalism, claymorphism, glassmorphism, and old money elegance." />
+  <title>Portfolio | Vent-Otörite</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand-mark" href="#home" aria-label="Go to home">
+        <span class="brand-emblem">M</span>
+        <span class="brand-copy">
+          <span>Muhammad Ahmad Maqbool</span>
+          <small>Digital Genralist</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-menu>
+        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#find-me">Find Me</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme" data-theme-toggle>
+        <span class="toggle-orb" aria-hidden="true"></span>
+        <span class="toggle-text" data-theme-label>Light</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-frame" id="home" aria-labelledby="hero-title">
+      <div class="section-inner hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Digital specialist</span>
+          <h1 id="hero-title">I Design, <br> I Build, <br>I Ship</h1>
+          <p>
+          I architect comprehensive digital solutions spanning strategic marketing, refined visual design, complex e-commerce ecosystems, and operational business frameworks. Leveraging extensive interdisciplinary expertise, I orchestrate seamless execution from conceptual strategy through meticulous deployment.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn btn-primary magnetic" href="#work">
+              <span>View Selected Work</span>
+              <i aria-hidden="true">↗</i>
+            </a>
+            <a class="btn btn-secondary magnetic" href="#contact">
+              <span>Start a Conversation</span>
+              <i aria-hidden="true">→</i>
+            </a>
+          </div>
+
+          <div class="hero-signature" aria-label="Highlights">
+            <span>Tag 1</span>
+            <span>Tag 2</span>
+            <span>Tag 3</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-reveal-delay="140">
+          <div class="portrait-card clay-card" data-tilt>
+            <div class="orbital-ring"></div>
+            <div class="monogram-lockup" aria-hidden="true">
+              <img src="image.jpeg" alt="Your Image" class="circle-image">
+            </div>
+            <p>Text 1 here. text 2 here. text 3 here.</p>
+          </div>
+
+          <div class="metric-card metric-card-one glass-panel" data-reveal data-reveal-delay="260">
+            <strong>50+ Projects Shipped</strong>
+            <span>Digital products, brands, and systems built for performance.</span>
+          </div>
+
+          <div class="metric-card metric-card-two glass-panel" data-reveal data-reveal-delay="340">
+            <strong>5+ Years in Digital</strong>
+            <span>Building and scaling commercial systems since 2020.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-frame" id="about" aria-labelledby="about-title">
+      <div class="section-inner">
+        <div class="section-heading centered" data-reveal>
+          <span class="eyebrow">About</span>
+          <h2 id="about-title">A balanced approach to design, engineering, and atmosphere.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-panel glass-panel equal-panel" data-reveal data-tilt>
+            <span class="panel-number">01</span>
+            <h3>Professional Journey</h3>
+            <p>
+              My work begins with structure: Five years across marketing, design, development, and e-commerce.  From first sketches of strategy to fully deployed operations across continents.
+            </p>
+            <ul class="fine-list">
+              <li>2020-2022: Marketing & brand foundations</li>
+              <li>2022-2024: Product design & engineering</li>
+              <li>2024-Now: Full-system architecture & operations</li>
+            </ul>
+          </article>
+
+          <article class="about-panel clay-card equal-panel" data-reveal data-reveal-delay="120" data-tilt>
+            <span class="panel-number">02</span>
+            <h3>Execution Methodology</h3>
+            <p>
+              I don’t deliver assets. I deliver engines. Strategy
+              becomes infrastructure, infrastructure becomes revenue.
+            </p>
+            <ul class="fine-list">
+              <li>Commercial-First Architecture – Every decision traces back to growth and margin</li>
+              <li>System Ownership – Strategy, product, operations, and deployment under one roof</li>
+              <li>Borderless Execution – Sourcing, logistics, and digital unified into one machine</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="about-summary glass-panel" data-reveal>
+          <div>
+            <span class="eyebrow">Currently</span>
+            <p>
+              Engineering web products and e-commerce systems.
+              Taking brands from strategy through deployment with focus on performance and revenue.
+            </p>
+          </div>
+          <div class="summary-divider" aria-hidden="true"></div>
+          <div class="summary-stats">
+            <span><strong>8+</strong> design disciplines</span>
+            <span><strong>12</strong> polished UI patterns</span>
+            <span><strong>100%</strong> responsive mindset</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-frame" id="work" aria-labelledby="work-title">
+      <div class="section-inner">
+        <div class="section-heading split-heading" data-reveal>
+          <div>
+            <span class="eyebrow">Selected Work</span>
+            <h2 id="work-title">Case studies with calm visuals and precise execution.</h2>
+          </div>
+          <p>
+            A curated set of concepts focused on premium positioning, conversion clarity, and
+            memorable digital touchpoints.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card glass-panel" data-reveal data-tilt>
+            <div class="project-media">
+              <span>01</span>
+              <div class="project-orbit"></div>
+            </div>
+            <div class="project-content">
+              <h3>Project Title</h3>
+              <p>Discription</p>
+              <div class="tag-row">
+                <span>Tag 1</span>
+                <span>Tag 2</span>
+                <span>Tag 3</span>
+              </div>
+              <a class="text-link" href="#" aria-label="Open ____ case study">Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-panel" data-reveal data-reveal-delay="120" data-tilt>
+            <div class="project-media">
+              <span>02</span>
+              <div class="project-orbit"></div>
+            </div>
+            <div class="project-content">
+              <h3>Project Title</h3>
+              <p>Discription</p>
+              <div class="tag-row">
+                <span>Tag 1</span>
+                <span>Tag 2</span>
+                <span>Tag 3</span>
+              </div>
+              <a class="text-link" href="#" aria-label="Open ____ case study">Case Study</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-panel" data-reveal data-reveal-delay="240" data-tilt>
+            <div class="project-media">
+              <span>03</span>
+              <div class="project-orbit"></div>
+            </div>
+            <div class="project-content">
+              <h3>Project Title</h3>
+              <p>Discription</p>
+              <div class="tag-row">
+                <span>Tag 1</span>
+                <span>Tag 2</span>
+                <span>Tag 3</span>
+              </div>
+              <a class="text-link" href="#" aria-label="Open ____ case study">Case Study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-frame" id="skills" aria-labelledby="skills-title">
+      <div class="section-inner">
+        <div class="section-heading centered" data-reveal>
+          <span class="eyebrow">Skills</span>
+          <h2 id="skills-title">A refined toolkit for expressive, reliable Systems.</h2>
+        </div>
+
+        <div class="skills-grid" aria-label="Skills and tools">
+          <span class="skill-badge" data-reveal>Web-Development</span>
+          <span class="skill-badge" data-reveal data-reveal-delay="40">Marketing</span>
+          <span class="skill-badge" data-reveal data-reveal-delay="80">Graphic Designing</span>
+          <span class="skill-badge" data-reveal data-reveal-delay="120">Search Engine Optimization</span>
+          <span class="skill-badge" data-reveal data-reveal-delay="160">Product Sourcing</span>
+          <span class="skill-badge" data-reveal data-reveal-delay="200"></span>
+          <span class="skill-badge" data-reveal data-reveal-delay="240"></span>
+          <span class="skill-badge" data-reveal data-reveal-delay="280"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="find-me section-frame" id="find-me" aria-labelledby="find-title">
+      <div class="section-inner">
+        <div class="section-heading split-heading" data-reveal>
+          <div>
+            <span class="eyebrow">Find Me</span>
+            <h2 id="find-title">Quietly present across creative and technical spaces.</h2>
+          </div>
+          <p>
+            Explore process notes, interface experiments, visual studies, and selected client-ready systems.
+          </p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card glass-panel" href="www.linkedin.com/in/vent-otorite" data-reveal data-tilt>
+            <span>LinkedIn</span>
+            <small>Strategy and product thinking</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="social-card glass-panel" href="https://github.com/vent-otorite" data-reveal data-reveal-delay="80" data-tilt>
+            <span>GitHub</span>
+            <small>Fun builds and experiments</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="social-card glass-panel" href="https://wa.me/923370180307" data-reveal data-reveal-delay="160" data-tilt>
+            <span>Whatsapp</span>
+            <small>Get to me directly</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="social-card glass-panel" href="#" data-reveal data-reveal-delay="240" data-tilt>
+            <span>Twitter / X</span>
+            <small>Observations and notes</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="social-card glass-panel" href="#" data-reveal data-reveal-delay="320" data-tilt>
+            <span>Fiverr</span>
+            <small>Micro-interactions and UI studies</small>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-frame" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-grid">
+        <div class="contact-copy" data-reveal>
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-title">Let’s build something refined, useful, and memorable.</h2>
+          <p>
+            Share a few details about your project. This demo form shows a polished mock success
+            message without reloading the page.
+          </p>
+
+          <div class="contact-notes">
+            <span>Availability: Text</span>
+            <span>Focus: Text</span>
+          </div>
+        </div>
+
+        <form class="contact-form glass-panel" data-contact-form data-reveal data-reveal-delay="140" action="https://formspree.io/f/xvzlgnqz" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the project..." required></textarea>
+
+          <button class="btn btn-primary form-button" type="submit">
+            <span>Send Message</span>
+            <i aria-hidden="true">✦</i>
+          </button>
+         </form>
+
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-inner">
+    <p>© <span data-current-year></span> Vent-Otörite.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+</body>
+</html>
