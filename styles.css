@@ -1,10 +1,5 @@
-/* ================================
-   Maison Portfolio — Plain CSS
-   Modern luxury, glassmorphism, claymorphism
-================================ */
-
+/* Neutral defaults in root */
 :root {
-  color-scheme: dark;
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
@@ -28,20 +23,57 @@
   --cursor-x: 50vw;
   --cursor-y: 20vh;
 
+  /* Neutral placeholders */
+  --bg: #ffffff;
+  --bg-soft: #f5f5f5;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-strong: #f5f5f5;
+  --surface-muted: #e0e0e0;
+  --surface-glass: rgba(255,255,255,0.78);
+  --text: #111111;
+  --text-muted: #555555;
+  --heading: #000000;
+  --line: rgba(0,0,0,0.1);
+  --line-strong: rgba(0,0,0,0.2);
+  --highlight: rgba(0,0,0,0.1);
+  --shade: rgba(0,0,0,0.2);
+  --accent: #222222;
+  --accent-strong: #444444;
+  --accent-muted: #888888;
+  --accent-cool: #666666;
+  --gold: #b49a63;
+  --gold-strong: #d6c08a;
+  --success: #4d7f63;
+  --shadow-soft: 0 18px 56px rgba(0,0,0,0.1);
+  --shadow-strong: 0 28px 90px rgba(0,0,0,0.2);
+  --shadow-clay: 16px 18px 40px rgba(0,0,0,0.15), -10px -10px 32px rgba(255,255,255,0.05);
+  --button-text: #ffffff;
+  --focus: rgba(0,0,0,0.2);
+
+  --gradient-page: var(--bg);
+  --gradient-card: var(--surface);
+  --gradient-accent: var(--accent);
+}
+
+/* Dark Theme */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
   --bg: #080708;
   --bg-soft: #111113;
   --bg-elevated: #151316;
   --surface: #171519;
   --surface-strong: #211a1d;
   --surface-muted: #252427;
-  --surface-glass: rgba(23, 21, 25, 0.76);
+  --surface-glass: rgba(23,21,25,0.76);
   --text: #f4eddf;
   --text-muted: #bfb5a4;
   --heading: #fff9ec;
-  --line: rgba(244, 237, 223, 0.12);
-  --line-strong: rgba(212, 184, 123, 0.32);
-  --highlight: rgba(255, 250, 238, 0.16);
-  --shade: rgba(0, 0, 0, 0.3);
+  --line: rgba(244,237,223,0.12);
+  --line-strong: rgba(212,184,123,0.32);
+  --highlight: rgba(255,250,238,0.16);
+  --shade: rgba(0,0,0,0.3);
   --accent: #6c1824;
   --accent-strong: #8a2634;
   --accent-muted: #44111a;
@@ -49,41 +81,42 @@
   --gold: #b49a63;
   --gold-strong: #d6c08a;
   --success: #9bbd97;
-  --shadow-soft: 0 18px 56px rgba(0, 0, 0, 0.28);
-  --shadow-strong: 0 28px 90px rgba(0, 0, 0, 0.42);
-  --shadow-clay: 16px 18px 40px rgba(0, 0, 0, 0.28), -10px -10px 32px rgba(255, 255, 255, 0.035);
+
+  --shadow-soft: 0 18px 56px rgba(0,0,0,0.28);
+  --shadow-strong: 0 28px 90px rgba(0,0,0,0.42);
+  --shadow-clay: 16px 18px 40px rgba(0,0,0,0.28), -10px -10px 32px rgba(255,255,255,0.035);
   --button-text: #fff8ea;
-  --focus: rgba(214, 192, 138, 0.58);
 
   --gradient-page:
-    radial-gradient(circle at 12% 10%, rgba(108, 24, 36, 0.26), transparent 28rem),
-    radial-gradient(circle at 88% 8%, rgba(180, 154, 99, 0.13), transparent 24rem),
-    radial-gradient(circle at 48% 100%, rgba(68, 17, 26, 0.32), transparent 34rem),
+    radial-gradient(circle at 12% 10%, rgba(108,24,36,0.26), transparent 28rem),
+    radial-gradient(circle at 88% 8%, rgba(180,154,99,0.13), transparent 24rem),
+    radial-gradient(circle at 48% 100%, rgba(68,17,26,0.32), transparent 34rem),
     linear-gradient(135deg, var(--bg), var(--bg-soft));
   --gradient-card:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    linear-gradient(145deg, color-mix(in srgb, var(--surface) 88%, var(--accent-muted)), var(--surface));
+    linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+    linear-gradient(145deg, var(--surface) 88%, var(--accent-muted));
   --gradient-accent:
-    linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--gold) 38%, var(--accent-strong)));
+    linear-gradient(135deg, var(--accent), var(--gold));
 }
 
-html[data-theme="light"] 
-{
+/* Light Theme */
+html[data-theme="light"] {
   color-scheme: light;
+
   --bg: #f6f8f8;
   --bg-soft: #eef2f3;
   --bg-elevated: #ffffff;
   --surface: #ffffff;
   --surface-strong: #f2f5f6;
   --surface-muted: #e7ecee;
-  --surface-glass: rgba(255, 255, 255, 0.78);
+  --surface-glass: rgba(255,255,255,0.78);
   --text: #252a2d;
   --text-muted: #657076;
   --heading: #111b22;
-  --line: rgba(24, 49, 83, 0.13);
-  --line-strong: rgba(23, 55, 88, 0.25);
-  --highlight: rgba(255, 255, 255, 0.92);
-  --shade: rgba(24, 49, 83, 0.08);
+  --line: rgba(24,49,83,0.13);
+  --line-strong: rgba(23,55,88,0.25);
+  --highlight: rgba(255,255,255,0.92);
+  --shade: rgba(24,49,83,0.08);
   --accent: #183153;
   --accent-strong: #254c76;
   --accent-muted: #dbe5ea;
@@ -91,23 +124,27 @@ html[data-theme="light"]
   --gold: #a78750;
   --gold-strong: #856c3e;
   --success: #4d7f63;
-  --shadow-soft: 0 18px 52px rgba(31, 51, 66, 0.12);
-  --shadow-strong: 0 28px 72px rgba(31, 51, 66, 0.18);
-  --shadow-clay: 14px 18px 34px rgba(31, 51, 66, 0.11), -12px -12px 30px rgba(255, 255, 255, 0.95);
+
+  --shadow-soft: 0 18px 52px rgba(31,51,66,0.12);
+  --shadow-strong: 0 28px 72px rgba(31,51,66,0.18);
+  --shadow-clay: 14px 18px 34px rgba(31,51,66,0.11), -12px -12px 30px rgba(255,255,255,0.95);
   --button-text: #fffaf0;
-  --focus: rgba(24, 49, 83, 0.38);
 
   --gradient-page:
-    radial-gradient(circle at 10% 8%, rgba(24, 49, 83, 0.11), transparent 27rem),
-    radial-gradient(circle at 86% 10%, rgba(120, 144, 156, 0.13), transparent 24rem),
-    radial-gradient(circle at 54% 100%, rgba(167, 135, 80, 0.11), transparent 32rem),
+    radial-gradient(circle at 10% 8%, rgba(24,49,83,0.11), transparent 27rem),
+    radial-gradient(circle at 86% 10%, rgba(120,144,156,0.13), transparent 24rem),
+    radial-gradient(circle at 54% 100%, rgba(167,135,80,0.11), transparent 32rem),
     linear-gradient(135deg, var(--bg), var(--bg-soft));
   --gradient-card:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.52)),
-    linear-gradient(145deg, color-mix(in srgb, var(--surface) 90%, var(--accent-muted)), var(--surface));
+    linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.52)),
+    linear-gradient(145deg, var(--surface) 90%, var(--accent-muted));
   --gradient-accent:
-    linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--gold) 36%, var(--accent-strong)));
+    linear-gradient(135deg, var(--accent), var(--gold));
 }
+*,
+*::before,
+*::after {
+ 
 
 /* Base */
 *,
