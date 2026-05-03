@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
+  <script>
+  (function() {
+    try {
+      const storageKey = "maison-portfolio-theme";
+      const savedTheme = localStorage.getItem(storageKey);
+      const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+      const theme = savedTheme || (systemPrefersLight ? "light" : "dark");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A refined portfolio website blending modern minimalism, claymorphism, glassmorphism, and old money elegance." />
